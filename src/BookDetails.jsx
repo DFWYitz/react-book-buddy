@@ -1,8 +1,10 @@
 import { useEffect } from "react"
+import { useParams } from "react-router-dom";
 
 const BookDetails = ()=>{
+  const{id}=useParams
 useEffect(()=>{
-  const BookDetails = async ()=>{
+  const BookDetails = async (id)=>{
     const BookDetails = await fetch (`https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/books/${id}`)
     const book= await BookDetails.json();
     console.log(book)
