@@ -18,13 +18,14 @@ const BookDetails = () => {
     <>
       <ol>
 
-        <h4>*Single Book Details*</h4>
+        <h4>*Single Book View*</h4>
         <li>
           <h2>{book.title}</h2>
         </li><li>
           <h2>{book.author}</h2>
         </li><li>
           <h4>{book.description}</h4>
+          <li><h2>{book.id}</h2></li>
         </li>
       </ol>
     </>
